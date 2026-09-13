@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #111827;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #38bdf8;
+}
+
+/* Home */
+
+.home {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.home-content {
+    max-width: 750px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.hello {
+    color: #2563eb;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.home-content h2 {
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+
+.buttons {
+    margin-top: 25px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 5px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buttons a:hover {
+    background-color: #1d4ed8;
+}
+
+/* Sections */
+
+section {
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+/* About */
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 6px;
+    color: #2563eb;
+    font-weight: bold;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+/* Projects */
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: white;
+    width: 400px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.project-card h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-card span {
+    display: inline-block;
+    background-color: #e0f2fe;
+    color: #0369a1;
+    padding: 5px 8px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+/* Education */
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.education-card {
+    background-color: white;
+    width: 350px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.education-card h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.education-card p {
+    margin: 8px;
+    line-height: 1.5;
+}
+
+/* Contact */
+
+.contact-content {
+    text-align: center;
+    line-height: 2;
+}
+
+.contact-content a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile */
+
+
+
+   @media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 12px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav ul a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .home {
+        padding: 40px 20px;
+    }
+
+    .profile-pic {
+        width: 160px;
+        height: 160px;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .project-card,
+    .education-card {
+        width: 100%;
+    }
+}
