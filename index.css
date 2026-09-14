@@ -246,29 +246,40 @@ footer {
 
 
 
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
 
     nav {
-        flex-direction: column;
-        gap: 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
         padding: 15px 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
 
     nav ul {
-        display: flex;
-        gap: 8px;
-       
-        justify-content: center;
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        flex: 1;
+        text-align: center;
     }
 
     nav ul a {
-        font-size: 12px;
+        font-size: 11px;
         white-space: nowrap;
     }
 
     .home {
-        padding: 120px 15px 50px;
+        padding: 130px 15px 50px;
     }
 
     .profile-pic {
